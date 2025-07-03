@@ -15,7 +15,7 @@ Assumes you already have podman and bun set up.
 
 Run this:
 ```bash
-podman run --replace --name=relay \
+podman run -d --replace --name=relay \
   -e PERSIST_DIR=/persist \
   -v ~/relay-persist:/persist \
   -e AUTO_ADD_LOCAL_IP=true \
